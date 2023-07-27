@@ -1,128 +1,215 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(230, 233, 237);
-  color: rgb(0, 0, 7);
-}
-/* section{
-  height: 400px;
-} */
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <script src="validation.js"></script>
 
-.navbar a {
-  float: left;
-  font-size: 20px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-.dropdown .dropbtn {
-  font-size: 20px;  
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
-  color: rgb(230, 233, 237);
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-  /* color:black; */
-  color: red;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-/* #feature2{
-  width: 300px;
-  height: 400px;
-  display:flex;
-  
-}
-#feauture2 div{
-  flex: 33%;
-} */
-</style>
 </head>
 <body>
+  
   <header class="bg-dark text-light">
-    
-    <div class="navbar">
-    <a href="nav.html">Home</a>
-    <div class="dropdown">
-        <button class="dropbtn">Services 
-        <i class="fa fa-caret-down"></i>
+    <div class="navbar" id="navBar">
+      <a href="nav.html">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">IP Services
+          <!-- <i class="fa fa-caret-down"></i> -->
         </button>
         <div class="dropdown-content">
-        <a href="#">Innovation Support</a>
-        <a href="#">IP Protection</a>
-        <a href="#">IP Enforcement and Commercialization</a>
-        <a href="#">IP Portfolio Management</a>
-        <a href="#">Market Research</a>
-        <a href="#">Business Development</a>
-        <a href="#">Other Services</a>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a>
+          <a href="services.html#ips1" onclick="serviceDisplay" id="iss">Innovation Support</a>
+          <a href="services.html#ips2" onclick="serviceDisplay">IP Protection</a>
+          <a href="services.html#ips3" onclick="serviceDisplay">IP Enforcement and Commercialization</a>
+          <a href="services.html#ips4" onclick="serviceDisplay">IP Portfolio Management</a>
+          <a href="services.html#ips5" onclick="serviceDisplay">Market Research</a>
+          <a href="services.html#ips6" onclick="serviceDisplay">Business Development</a>
+          <a href="services.html#ips" onclick="serviceDisplay">Other Services</a>
         </div>
-    </div> 
-    <a href="aboutus.html">About Us</a>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Solar Solutions
+          <!-- <i class="fa fa-caret-down"></i> -->
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Off Grid System</a>
+          <a href="#">On Grid System</a>
+          <a href="#">Hybrid Solar System</a>
+          <a href="#">Solar Water Pump</a>
+        </div>
+      </div>
+      <a href="aboutus.html">About Us</a>
     </div>
-</header>
-<article>
+  </header>
+  
+  <hr>
+  <article id="ipservices">
+    <div class="w3-container" id="ips1">
+      <h3>Innovation Support</h3>
+      <ul>
+        <li>Quality patent and non-patent prior art search, analysis</li>
+        <li>Explore and identify the emerging technologies and new opportunities</li>
+        <li>Understand the existing prior art around the new ideas to pursue further development</li>
+        <li>Landscapes and identification of white space to determine the area to focus and develop <br>long term technology roadmap</li>
+      </ul>
+      <div id="sfooterNote">
+        <a href="#navBar"><i class="fa fa-caret-up w3-xxxlarge" style="float: right;color: red;font-size: 3px;"></i></a>
+      </div>
+    </div>
+
+    <div class="w3-container" id="ips2">
+      <h3>IP Protection</h3>
+      <ul>
+        <li>Identification the potential inventions, strategically protect them by high quality patents</li>
+        <li>Patentability analysis to increase the success of rate of patent grant</li>
+        <li>Drat and file quality patent application</li>
+        <li>Effective monitoring and office action to secure early and cost-effective protection</li>
+        <li>Strategic advice on patent filing in different jurisdictions of business interest</li>
+      </ul>
+      <div id="sfooterNote">
+        <a href="#navBar"><i class="fa fa-caret-up w3-xxxlarge" style="float: right;color: red;font-size: 3px;"></i></a>
+      </div>
+    </div>
+
+    <div class="w3-container ipservices" id="ips3">
+      <h3>Enforcement and Commercialization</h3>
+      <ul>
+        <li>Explore the opportunities for diverse solutions from the protected IP assets of the client</li>
+        <li>Protect the clients from the costly IP litigation with efficient and timely due diligence</li>
+        <li>Validity and invalidity analysis for IP assets under litigation and potential for litigation</li>
+        <li>Explore the licensing, cross licensing and partnership opportunities</li>
+      </ul>
+      <div id="sfooterNote">
+        <a href="#navBar"><i class="fa fa-caret-up w3-xxxlarge" style="float: right;color: red;font-size: 3px;"></i></a>
+      </div>
+    </div>
+
+    <div class="w3-container ipservices" id="ips4">
+      <h3>IP Portfolio Management</h3>
+      <ul>
+        <li>Develop IP policy, processes, strategy for effective management of IP assets to maximize the benefits.</li>
+        <li>Audit and evaluation organization IP assets on regular basis</li>
+        <li>Monitor and manage the legal requirements, maintain healthy and commercially viable IP portfolio</li>
+        <li>Timely advice to top management, business and technology teams on latest trends and legal updates </li>
+      </ul>
+      <div id="sfooterNote">
+        <a href="#navBar"><i class="fa fa-caret-up w3-xxxlarge" style="float: right;color: red;font-size: 3px;"></i></a>
+      </div>
+    </div>
+
+    <div class="w3-container ipservices" id="ips5">
+      <h3>Market Research</h3>
+      <ul>
+        <li>We provide comprehensive competitive intelligence reports on the trends and forecast on technology, products, market, and competitor. </li>
+        <li>Forecast the products and services trends and opportunities to stay ahead of competition</li>
+        <div id="sfooterNote">
+          <a href="#navBar"><i class="fa fa-caret-up w3-xxxlarge" style="float: right;color: red;font-size: 3px;"></i></a>
+        </div>
+    </div>
+
+    <div class="w3-container ipservices" id="ips6">
+      <h3>Busniess Development</h3>
+      <ul>
+        <li>IP Risk assessment for merger, acquisitions, licensing and strategic sell off</li>
+        <li>Technology Scouting</li>
+      </ul>
+      <div id="sfooterNote">
+        <a href="#navBar"><i class="fa fa-caret-up w3-xxxlarge" style="float: right;color: red;font-size: 3px;"></i></a>
+      </div>
+    </div>
+
+
+   
+
+
+  </article>
+  <hr>
+    <footer class="w3-container w3-grey" id="footerEnlarge">
+      <div class="w3-container w3-row-padding">
+        <div class="w3-half w3-container w3-center">
+          <!-- <div class="w3-half w3-container"> -->
+          <div class="w3-container" style="text-align: left;">
+            <h1>Nelli IP Services Private Limited</h1>
+            <div>
+              No. 136, 7th main, Maruthi layout<br>
+              Vasanthapura, Bengaluru-560061<br>
+              GSTIN:&nbsp; 29AAFCN5789F1ZW<br>
+            <i class="fa fa-phone"></i>&nbsp;&nbsp;<span style="font-weight: bold;"> 99005 79112</span><br>
+            <i class="fa fa-phone"></i>&nbsp;&nbsp;<span style="font-weight: bold;"> 080-2974 3268</span><br>
+            <i class="fa fa-envelope"></i>&nbsp;&nbsp;<span style="font-weight: bold;">info@nelliip.com</spain><br>
+              <!-- website: www.nelliip.com -->
+            </div>
+          </div>
+          <!-- <div class="w3-half w3-container w3-middle">
+            <i class="fa fa-phone"></i><span style="font-weight: bold;"> 99005 79112, 080-2974 3268</span><br>
+            <i class="fa fa-envelope"></i><span style="font-weight: bold;"> info@nelliip.com</spain><br>
+          </div> -->
+      </div>
+        <div class="w3-half w3-container" style="text-align: center;">
+          <div class="w3-xxlarge">Quick Links</div>
+          <div class="w3-row-padding" id="quickLinks">
+            <div class="w3-third w3-container" style="text-align: left;">
+              <a href="#">Home</a><br>
+              <a href="#">About Us</a><br>
+              <a href="#">Contact Us</a><br>
+              <!-- Below commented code to be standardized -->
+
+              <!-- <div class="dropdown">
+                <button class="dropbtn">IP Services
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Innovation Support</a>
+                  <a href="#">IP Protection</a>
+                  <a href="#">IP Enforcement and Commercialization</a>
+                  <a href="#">IP Portfolio Management</a>
+                  <a href="#">Market Research</a>
+                  <a href="#">Business Development</a>
+                  <a href="#">Other Services</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="dropbtn">Solar Solutions
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Off Grid System</a>
+                  <a href="#">On Grid System</a>
+                  <a href="#">Hybrid Solar System</a>
+                  <a href="#">Solar Water Pump</a>
+                </div>
+              </div> -->
+
+            </div>
+            <div class="w3-third w3-container" style="text-align: left;">
+              <a href="#">Innovation Support</a><br>
+              <a href="#">IP Protection</a><br>
+              <a href="#">IP Enforcement and Commercialization</a><br>
+              <a href="#">IP Portfolio Management</a><br>
+              <a href="#">Market Research</a><br>
+              <a href="#">Business Development</a><br>
+              <a href="#">Other Services</a><br>
+            </div>
     
-</article>
-
-<footer class="w3-container">
-    <h3 style="color: rgb(2, 43, 2);">Nelli IP Services Private Limited</h3>
-    No. 136, 7th main, Maruthi layout<br> Vasanthapura, Bengaluru-560061<br>
-    Ph: 9900579112, 080-2974 3268<br>
-    Mail: info@nelliip.com<br>
-        <!-- website: www.nelliip.com -->
-    GSTIN: 29AAFCN5789F1ZW<br>
-
-</footer>
-</div>
-</body>
-</html>
+            <div class="w3-third w3-container" style="text-align: left;">
+              <a href="#">Off Grid System</a><br>
+              <a href="#">On Grid System</a><br>
+              <a href="#">Hybrid Solar System</a><br>
+              <a href="#">Solar Water Pump</a><br>
+            </div>
+          </div>
+          <div class="w3-display-container">
+          </div>
+        </div>
+      </div>
+      <hr style="text-decoration: none;">
+      <div id="footerNote">
+        <a href="#navBar"><i class="fa fa-caret-up w3-xxxlarge" style="float: right;color: red;font-size: 3px;"></i></a>
+      </div>
+    </footer>
+    </body>
+    
+    </html>

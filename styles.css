@@ -62,15 +62,6 @@
   display: block;
 }
 
-/* #welcomeMes{
-  text-align: center;
-  
-} */
-
-
-
-
-
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: rgb(230, 233, 237);
@@ -81,12 +72,37 @@ section{
   height:max-content;
 }
 
-#titleSec #title1{
-  font-size: 500px;
+#titleSec{
+  width: 100vw;
+  /* height: calc(100vh-50px); */
+  height: 95vh;
+  background-image: url('Picture1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* display: table; */
 }
-#titleMes{
-  align-content: center;
-  justify-content: center;
+#textCenter{
+  /* display: table-cell; */
+  /* vertical-align:text-top; */
+  padding: 5px;
+  
+}
+#titleSec h2{
+  font-size: 60px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  /* font-family: sans-serif; */
+  text-shadow: 2px 2px 8px #111;
+}
+#titleSec h3{
+  font-size: 28px;
+  font-weight: 100;
+  color:lime;
+  text-align: center;
+  font-family: sans-serif;
+  text-shadow: 2px 2px 100px #111;
 }
 
 li{
@@ -97,7 +113,7 @@ li{
   /* display: grid; */
   /* grid-template-columns: auto auto auto; */
   background-color: beige;
-  padding: 5px;
+  /* padding: 5px; */
 
 }
 #grid-item {
@@ -107,8 +123,8 @@ li{
   font-size: 12px;
   text-align: left;
   margin: 1rem;
-  width: 260px;
-  height: 230px;
+  width: 350px;
+  height: 280px;
 }
 #grid-item div i{
   /* background-color: beige; */
@@ -143,6 +159,21 @@ li{
   color: red;
 } 
 
+#footerNote{
+  position: fixed;
+  bottom: 0px;
+  right:0px;
+}
+#footerNote:hover{
+  /* background-color: grey; */
+  font-size: 100px;
+  font-weight: 900;
+  /* font-stretch:ultra-expanded; */
+}
+#sfooterNote{
+  display: none;
+}
+
 
 /* footer{
     background-color: #333;
@@ -158,6 +189,31 @@ li{
   flex: 33%;
 } */
 /* </style> */
+
+
+/* Services Page Begins*/
+#ipservices div{
+  height: 100vh;
+}
+#ipservices div h3{
+  display: block;
+  font-size: 50px;
+  font-weight: 600;
+  color: #111;
+  text-align: center;
+
+}
+#ipservices div li{
+  display: block;
+  font-size: 24px;
+  font-weight: 100;
+  color: #111;
+  text-align: left;
+  margin: 0 200px;
+
+}
+
+/* Services Page ends */
 
 /* For Desktop View */
 @media screen and (min-width: 1024px) {
@@ -181,6 +237,8 @@ and (max-device-width: 1024px) {
     /* height: max-content; */
     width: 260px;
     height: 230px;
+    display:block;
+    overflow-wrap: normal;
   }
 }
 
