@@ -2,6 +2,8 @@
 .navbar {
   overflow: hidden;
   background-color: #333;
+  padding: 50px auto;
+  
 }
 
 .navbar a {
@@ -114,6 +116,7 @@ li{
   /* grid-template-columns: auto auto auto; */
   background-color: beige;
   /* padding: 5px; */
+  display: flex;
 
 }
 #grid-item {
@@ -123,8 +126,9 @@ li{
   font-size: 12px;
   text-align: left;
   margin: 1rem;
-  width: 350px;
-  height: 280px;
+  width: auto;
+  height: auto;
+  flex-wrap: wrap;
 }
 #grid-item div i{
   /* background-color: beige; */
@@ -152,24 +156,20 @@ li{
 #quickLinks a{
   text-decoration: none;
 }
-/* #footerEnlarge{
-
-}*/
+#footerEnlarge{
+  overflow: hidden;
+}
 #footerEnlarge a:hover{
   color: red;
 } 
 
 #footerNote{
-  position: fixed;
+  /* position: fixed;
   bottom: 0px;
-  right:0px;
+  right:0px; */
+  float: right;
 }
-#footerNote:hover{
-  /* background-color: grey; */
-  font-size: 100px;
-  font-weight: 900;
-  /* font-stretch:ultra-expanded; */
-}
+
 #sfooterNote{
   display: none;
 }
@@ -192,15 +192,22 @@ li{
 
 
 /* Services Page Begins*/
-#ipservices div{
+/* #ipservices div{
   height: 100vh;
-}
+  display: none;
+} */
 #ipservices div h3{
   display: block;
   font-size: 50px;
   font-weight: 600;
+  margin: 0 100px;
+  padding:0 100px;
+  width: calc(100% - 200px);
+  /* width:max-content; */
   color: #111;
   text-align: center;
+  
+  /* background-color: rgb(219, 226, 226); */
 
 }
 #ipservices div li{
@@ -210,6 +217,9 @@ li{
   color: #111;
   text-align: left;
   margin: 0 200px;
+  padding:0 100px;
+  /* width: calc(100% - 200px); */
+  
 
 }
 
@@ -235,10 +245,27 @@ and (max-device-width: 1024px) {
   } */
   #grid-item {
     /* height: max-content; */
-    width: 260px;
+    /* width: 260px;
     height: 230px;
     display:block;
-    overflow-wrap: normal;
+    overflow-wrap:normal; */
+
+    #grid-row {
+      display: grid !important;
+      grid-template-columns: auto auto;
+      padding: 5px;
+  }
+  
+  /* Designing all grid-items */
+  .grid-item {
+      background-color: rgba(255, 255, 255, 0.8);
+      /* border: 1px solid black; */
+      padding: 20px;
+      font-size: 30px;
+      text-align: center;
+  }
+  
+
   }
 }
 

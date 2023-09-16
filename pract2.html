@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <title>Pract2</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -102,11 +102,11 @@
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
 
     <body>
         <a id="try">Click here</a>
-        <!-- <h1 id="text"></h1> -->
+        <h1 id="text"></h1>
         <script>
         document.getElementById("try").addEventListener("click", function(){
         // document.getElementById("text").innerText = "GeeksforGeeks";
@@ -117,4 +117,37 @@
 
 </body>
 
+</html> -->
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript Map Objects</h2>
+<p id="title">Creating a Map from an Array:</p>
+
+<p id="demo"></p>
+
+<script>
+// Create a Map
+const title = new Map([
+["ips1","Innovation Support"],
+["ips2","IP Protection"],
+["ips3","Enforcement and Commercialization"],
+["ips4","IP Portfolio Management"],
+["ips5","Market Research"],
+["ips6","Busniess Development"]
+]);
+const desc = new Map([
+  ["ips1", "<li>Quality patent and non-patent prior art search, analysis</li> <li>Explore and identify the emerging technologies and new opportunities</li><li>Understand the existing prior art around the new ideas to pursue further development</li> <li>Landscapes and identification of white space to determine the area to focus and develop <br>long term technology roadmap</li>"],
+  ["ips2", "<li>Identification the potential inventions, strategically protect them by high quality patents</li> <li>Patentability analysis to increase the success of rate of patent grant</li> <li>Drat and file quality patent application</li> <li>Effective monitoring and office action to secure early and cost-effective protection</li> <li>Strategic advice on patent filing in different jurisdictions of business interest</li>"],
+  ["ips3", "<li>Explore the opportunities for diverse solutions from the protected IP assets of the client</li> <li>Protect the clients from the costly IP litigation with efficient and timely due diligence</li> <li>Validity and invalidity analysis for IP assets under litigation and potential for litigation</li> <li>Explore the licensing, cross licensing and partnership opportunities</li>"],
+  ["ips4", "<li>Develop IP policy, processes, strategy for effective management of IP assets to maximize the benefits.</li <li>Audit and evaluation organization IP assets on regular basis</li> <li>Monitor and manage the legal requirements, maintain healthy and commercially viable IP portfolio</li> <li>Timely advice to top management, business and technology teams on latest trends and legal updates </li>"],
+  ["ips5", "<li>We provide comprehensive competitive intelligence reports on the trends and forecast on technology, products, market, and competitor. </li> <li>Forecast the products and services trends and opportunities to stay ahead of competition</li>"],
+  ["ips6", "<li>IP Risk assessment for merger, acquisitions, licensing and strategic sell off</li> <li>Technology Scouting</li>"],
+]);
+
+document.getElementById("title").innerHTML = title.get("ips6");
+document.getElementById("demo").innerHTML = desc.get("ips6");
+</script>
+
+</body>
 </html>
